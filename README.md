@@ -1,6 +1,6 @@
 # 🌿 RingardeSkin – Skincare Brand Website
 
-**RingardeSkin** is a clean, responsive, and user-friendly website for a skincare business offering premium facial treatments and curated products. This project combines **HTML**, **CSS**, and a touch of **JavaScript** to enhance interactivity and user flow — including booking, navigation, and cart features.
+**RingardeSkin** is a clean, responsive, and user-friendly website for a skincare business offering premium facial treatments and curated products. This project combines **HTML**, **CSS**, and a touch of **JavaScript** to enhance interactivity and user flow including booking, navigation, and cart features.
 
 ---
 
