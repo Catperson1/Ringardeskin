@@ -1,0 +1,58 @@
+body{
+			background-image: url("IMG_1660.jpg");
+			margin-left:100px;
+			background-repeat: no-repeat;
+			background-attachment: scroll	;
+			background-position: center;
+			background-size: cover;
+
+		}
+		h5{
+			color: linen;
+			text-align: center;
+			font-family: serif;
+
+		}
+		h6{
+			color: linen;
+			text-align: center;
+		}
+		h1{
+			color: linen;
+			text-align: center;
+			font-size: 300%;
+			font-family:courier;
+		}
+		th,p{
+			color: linen;
+			text-align: center;
+		}
+		a:link{
+		    color:linen;
+		    text-decoration: none;
+		    display: inline-block;
+		    background-color: blanchedalmond ;
+		    padding: 20px;
+		    border-radius:10px ;
+		}
+		a:visited{
+			color: maroon;
+		}
+		a:hover{
+			color: burlywood;
+		}
+		a:active{
+			color:white;
+		}
+		.column {
+			float: center;
+			width: 33.33%;
+			padding: 5px;
+			
+		}
+		.row::after {
+		  	content: "";
+		  	clear: both;
+		  	display: table;
+		  	
+		}

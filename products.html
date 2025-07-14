@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>products</title>
+	<link rel="stylesheet" type="text/css" href="produc.css"></link>	
+</head>
+<body>
+	<h3>RINGARDE</h3>
+	<div class="navbar">
+		<a href="index.html" >Home</a>
+		<a href="products.html" class="active">Products</a>
+		<a href="About Us.html">About us</a>
+		<a href="Contact us.html">Contact us</a>
+		<a href="Booking.html">Book</a>
+		<a href="Review.html">Review</a>
+		<a href="cart.html">Cart</a>
+	</div>
+	<br>
+	<div class="row">
+		<div class="column">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 6</div>
+			  <img src="model1.jpg" style="width:100%">
+			  <div class="text">Caption Text</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="model2.jpg" style="width:100%">
+			  <div class="text">Caption Two</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 6</div>
+			  <img src="model8.jpg" style="width:100%">
+			  <div class="text">Caption Three</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">4 / 6</div>
+			  <img src="model3.jpg" style="width:100%">
+			  <div class="text">Caption Three</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">5 / 6</div>
+			  <img src="model9.jpg" style="width:100%">
+			  <div class="text">Caption Three</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">6 / 6</div>
+			  <img src="model4.jpg" style="width:100%">
+			  <div class="text">Caption Three</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>	
+		</div>
+		<div class="column">
+			<video width="600%" height="240" controls>
+			  <source src="pint1.mp4" type="video/mp4">
+			  
+			</video>
+		</div>
+	</div>
+	<br>
+
+	<div style="text-align:left">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	  <span class="dot" onclick="currentSlide(5)"></span> 
+	  <span class="dot" onclick="currentSlide(6)"></span>
+	</div>
+
+	<script>
+	let slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+
+	function myadd(){
+		
+	}
+	</script>
+
+	<h1> The Collections</h1>
+	<div class="row">
+	  <div class="column">
+	  	<div class="card">
+		    <img src="IMG_1669.jpg" alt="Snow" style="width:100%">
+		    <div class="container">
+	        <h2>Vinanza </h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      	</div>
+	    </div>
+	  </div>
+	  <div class="column">
+	  	<div class="card">
+		    <img src="IMG_1670.jpg" alt="Forest" style="width:100%">
+		    <div class="container">
+	        <h2>Herrio</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      	</div>
+	    </div>
+	  </div>
+	  <div class="column">
+	  	<div class="card">
+		    <img src="IMG_1671.jpg" alt="Mountains" style="width:100%">
+		    <div class="container">
+	        <h2>Shine</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      	</div>
+	    </div>
+	  </div>
+	  <div class="column">
+	  	<div class="card">
+		    <img src="IMG_1674.jpg" alt="Snow" style="width:100%">
+		    <div class="container">
+	        <h2>Fine</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      	</div>
+	    </div>
+	  </div>
+	  <div class="column">
+	  	<div class="card">
+		    <img src="IMG_1673.jpg" alt="Forest" style="width:100%">
+		  	<div class="container">
+		    <h2>Biossance cleansing oil</h2>
+		    <p>$1600</p>
+		    <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      	</div>
+	    </div>
+	  </div>
+	  <div class="column">
+	  	<div class="card">
+	    	<img src="IMG_1672.jpg" alt="Mountains" style="width:100%">
+	    	<div class="container">
+	        <h2>Honey</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	
+	&nbsp
+
+	<h1>Face</h1>
+	<div class="row">
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1662.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Real</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1663.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Costailor</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1686.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Gherane</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	   <div class="column">
+	    <div class="card">
+	      <img src="IMG_1666.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>John Master</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1665.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Yufa-10 </h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1661.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Byredo</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div> 
+	</div>
+
+
+	<h1>Body</h1>
+	<div class="row">
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1677.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Malako</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1678.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Rare</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1682.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Act + Acre</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div> 
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1679.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Pai</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1681.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Christemarine</h2>
+	        <p>$1600</p>
+	        <p><button class="button">Add to Cart</button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="IMG_1680.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Wildsmith global super oil</h2>
+	        <p>$1600</p>
+	        <p><button class="button">Add to Cart</button></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<h1>Lip oil</h1>
+	<div class="row">
+	  <div class="column">
+	    <div class="card">
+	      <img src="lip1.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Javer</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="lip2.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>merit</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="lip3.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Nincky lux</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div> 
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="lip4.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Lux</h2>
+	        <p>$1600</p>
+	        <p><button class="button"><a href="cart.html">Add to Cart</a></button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="lip5.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Lipskiss</h2>
+	        <p>$1600</p>
+	        <p><button class="button">Add to Cart</button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="lip6.jpg" alt="Jane" style="width:100%">
+	      <div class="container">
+	        <h2>Ulta</h2>
+	        <p>$1600</p>
+	        <p><button class="button">Add to Cart</button></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
